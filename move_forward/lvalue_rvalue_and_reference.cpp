@@ -43,7 +43,8 @@ int main(int argc, char ** argv){
 
 	function(lvalue);
 	//func(lvalue);
-	//func(a);  //compile error , cann't use rvalue-reference in the lamada function
+	func(a);  //compile error , cann't use rvalue-reference in the lamada function, because when using rvalue-reference, it will work as lvalue.
+
 	func(move(lvalue));
 
 	cout<<"function(lvalue)="<<function(lvalue)<<endl;
